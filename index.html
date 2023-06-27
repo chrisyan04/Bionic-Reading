@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioReader</title>
+    <link rel="stylesheet" href="./resources/css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Exo 2' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/b31f370ec2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="index.html"><img src="./resources/img/bioReadTemp.jpeg" alt="BioReader" class="img-home"></a>
+            <button class="navbar-toggler" type="button" onclick="toggleNavBar()">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <ul class="navbar-collapse" id="navbarItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./templates/About.html">About Us</a></li>
+                <li><a href="./templates/Science.html">Science Info</a></li>
+                <li><a href="./templates/Feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>BioReader &nbsp; V1.0</h1>
+    <div class="main">
+        <label for="inputText">Enter text:</label>
+        <textarea name="input" id="inputText" cols="50" rows="10"></textarea>
+        <br>
+        <div class="button-container">
+            <button class="biovert" onclick="convertText()">Biovert</button>
+            <button class="reset-button" onclick="resetText()">Reset</button>
+        </div>
+        <br>
+        <label>Bionically Converted Output</label>
+        <div class="output-box">
+            <div class="copy-container">
+                <button class="copy-button" onclick="copyToClipboard()"><i class="fa-solid fa-copy"></i></button>
+            </div>
+            <pre id="outputText"></pre>
+        </div>
+    </div>
+
+    <script src="./resources/js/api.js"></script>
+    <script src="./resources/js/copy.js"></script>
+    <script src="./resources/js/reset.js"></script>
+</body>
+</html>
