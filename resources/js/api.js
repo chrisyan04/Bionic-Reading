@@ -23,8 +23,3 @@ async function convertText() {
         console.error(error);
     }
 }
-
-function toggleNavBar() {
-    const navbarCollapse = document.getElementById('navbarItems');
-    navbarCollapse.classList.toggle('show');
-}
